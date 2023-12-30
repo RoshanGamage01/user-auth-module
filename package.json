@@ -1,0 +1,24 @@
+{
+  "name": "user-auth-module",
+  "version": "1.0.0",
+  "description": "User authentication and autherization module - node.js (javascript)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "permissions": "node Automations/configPermissions.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RoshanGamage01",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
