@@ -44,6 +44,23 @@ class AuthServices{
             throw error;
         }
     }
+
+    /**
+     * @method getUserById
+     * Get a user by its id.
+     * 
+     * @param {string} userId 
+     * @returns {Promise<{user: User}>}
+     */
+    async getUserById(userId){
+        try{
+            const user = await User.findById(userId);
+            if(!user) throw 'User not found.';
+            return user;
+        }catch(error){
+            throw error;
+        }
+    }
 }
 
 module.exports = new AuthServices();
