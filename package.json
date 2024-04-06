@@ -1,6 +1,6 @@
 {
   "name": "user-auth-module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Nodejs User Auth module with role based authentication",
   "main": "src/index.js",
   "scripts": {
