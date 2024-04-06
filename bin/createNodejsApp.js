@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 /**
  * This file is taken from the node-express-boilerplate project on GitHub.
+ * type - ` node ./bin/createNodejsApp.js ../user-auth-new` to create a new project
+ * 
  * @author `Hagop Jamkojian <hagopj13@gmail.com>`
  * @author `RoshanGamage01 <apple.roshangamage@gmail.com>`
  */
@@ -93,9 +95,6 @@ async function setup() {
     // Remove extra files
     fs.unlinkSync(path.join(appPath, 'bin', 'createNodejsApp.js'));
     fs.rmdirSync(path.join(appPath, 'bin'));
-    if (!useYarn) {
-      fs.unlinkSync(path.join(appPath, 'yarn.lock'));
-    }
 
     console.log('Installation is now complete!');
     console.log();
@@ -104,8 +103,7 @@ async function setup() {
     console.log(`    cd ${folderName}`);
     console.log(useYarn ? '    yarn dev' : '    npm run dev');
     console.log();
-    console.log('Enjoy your production-ready Node.js app, which already supports a large number of ready-made features!');
-    console.log('Check README.md for more info.');
+    console.log('Enjoy your production-ready Node.js app! 🚀');
   } catch (error) {
     console.log(error);
   }
